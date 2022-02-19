@@ -13,10 +13,15 @@
 #include "Vector3.h"
 
 /*  namespace Toolkit{} inside headers
- *   using namespace Toolkit inside cpps
- */
+    using namespace Toolkit inside cpps
+*/
 namespace Toolkit
 {
-    template <typename T>
-    void Swap(T &val1, T &val2);
+    class TOOLKIT_API Tools
+    {
+    public:
+        template <typename T>
+        static void Swap(T& val1, T& val2);
+    };
+
 }
